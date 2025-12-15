@@ -1,0 +1,48 @@
+body{
+    margin: 0; /*o margin serve para tirar a margem padrao do body*/
+    background-color: rgb(1, 67, 69);
+}
+.main-game{
+    height: 100vh; /*vh = viewport height, ou seja, altura da tela*/
+    width: 100vw; /*vw = viewport width, ou seja, largura da tela*/
+    display: flex; /*flex serve para alinhar os elementos dentro do container*/
+    justify-content: center; /*centraliza os elementos na horizontal*/
+    align-items: center; /*centraliza os elementos na vertical*/
+}
+.genius{
+    /*ele precisa estar dividido em 4 partes*/
+    display: grid;/*grid serve para criar uma grade*/
+    grid-template-areas: 'verde vermelho' 'amarelo azul'; /*define as areas do grid*/
+    grid-gap: 10px; /*espaçamento entre os elementos do grid*/
+    border: 1px solid white; /*borda branca em volta do jogo*/
+    background-color: white; /*cor de fundo do jogo*/
+    border-radius: 100%; /*borda arredondada*/
+    margin-top: 20%; /*margem superior*/
+    width: 700px; /*largura do jogo*/
+    height: 700px; /*altura do jogo*/
+}
+.blue{
+    background-color: rgb(10, 198, 245);
+    grid-area: azul; /*define a area do grid*/
+    border-bottom-right-radius: 100%; /*borda arredondada*/
+
+}
+.red{
+    grid-area: vermelho; /*define a area do grid*/
+    background-color: crimson;
+    border-top-right-radius: 100%; /*borda arredondada*/
+}
+.yellow{
+    grid-area: amarelo; /*define a area do grid*/
+    background-color: yellow;
+    border-bottom-left-radius: 100%; /*borda arredondada*/
+}
+.green{
+    grid-area: verde; /*define a area do grid*/
+    background-color: rgb(0, 128, 38);
+    border-top-left-radius: 100%; /*borda arredondada*/
+}
+.selected{
+    opacity: 0.8; /*diminui a opacidade da cor selecionada*/
+    /*ela ficará mais transparente*/
+}
