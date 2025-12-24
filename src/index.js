@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -13,3 +14,16 @@ root.render(
 reportWebVitals();
 //o objeto dom tem o método reader, que recebe dois parametros
 //o get vai pegar o elemento com id root, no index html
+=======
+import React from "react";
+import ReactDOM from "react-dom";
+
+import Providers from "./providers";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Providers />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+>>>>>>> 4be1867 (projeto github)
